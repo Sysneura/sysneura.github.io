@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sysneura | Official Ringtones</title>
+    <style>
+        :root {
+            --neon-pink: #ff00ff;
+            --neon-cyan: #00ffff;
+            --dark-bg: #0a0a0c;
+            --darker-bg: #050506;
+            --text-main: #e0e0e0;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: linear-gradient(rgba(10, 10, 12, 0.85), rgba(10, 10, 12, 0.85)), url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            width: 100%;
+            background: linear-gradient(180deg, var(--darker-bg) 0%, transparent 100%);
+            border-bottom: 2px solid var(--neon-pink);
+            box-shadow: 0 0 15px var(--neon-pink);
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px var(--neon-pink), 0 0 20px var(--neon-pink), 0 0 40px var(--neon-pink);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--neon-cyan);
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        .track-card {
+            background: rgba(5, 5, 6, 0.8);
+            border: 1px solid var(--neon-cyan);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .track-card:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            transform: translateY(-2px);
+            border-color: var(--neon-pink);
+        }
+
+        .track-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px dashed #333;
+            padding-bottom: 10px;
+        }
+
+        .track-title {
+            font-size: 1.5rem;
+            color: var(--neon-cyan);
+            font-weight: bold;
+            text-shadow: 0 0 5px var(--neon-cyan);
+        }
+
+        .track-controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        audio {
+            flex-grow: 1;
+            height: 30px;
+            outline: none;
+            min-width: 250px;
+        }
+
+        /* Custom Audio Player Colors */
+        audio::-webkit-media-controls-panel {
+            background-color: var(--dark-bg);
+        }
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-mute-button {
+            filter: invert(1);
+        }
+
+        .action-btn {
+            background: transparent;
+            padding: 10px 20px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .stop-btn {
+            color: var(--neon-cyan);
+            border: 2px solid var(--neon-cyan);
+            text-shadow: 0 0 5px var(--neon-cyan);
+            box-shadow: inset 0 0 10px transparent, 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+
+        .stop-btn:hover {
+            background: var(--neon-cyan);
+            color: var(--dark-bg);
+            box-shadow: 0 0 20px var(--neon-cyan);
+            text-shadow: none;
+        }
+
+        .download-btn {
+            color: var(--neon-pink);
+            border: 2px solid var(--neon-pink);
+            text-shadow: 0 0 5px var(--neon-pink);
+            box-shadow: inset 0 0 10px transparent, 0 0 10px rgba(255, 0, 255, 0.2);
+        }
+
+        .download-btn:hover {
+            background: var(--neon-pink);
+            color: var(--dark-bg);
+            box-shadow: 0 0 20px var(--neon-pink);
+            text-shadow: none;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            width: 100%;
+        }
+
+        .heart {
+            color: var(--neon-pink);
+            text-shadow: 0 0 5px var(--neon-pink);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SYSNEURA</h1>
+        <div class="subtitle">Official Free Ringtones</div>
+    </header>
+
+    <div class="container">
+
+        <!-- Track: Sysneura - BAM BAM (Misha Miller Russian Cover)[Neon Remix] (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - BAM BAM (Misha Miller Russian Cover)[Neon Remix] (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - BAM BAM (Misha Miller Russian Cover)[Neon Remix] Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - BAM BAM (Misha Miller Russian Cover)[Neon Remix] Ringtone.mp3', 'Sysneura_-_BAM_BAM_(Misha_Miller_Russian_Cover)[Neon_Remix]_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Du bist mein Traum (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Du bist mein Traum (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Du bist mein Traum Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Du bist mein Traum Ringtone.mp3', 'Sysneura_-_Du_bist_mein_Traum_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Dunkelheit (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Dunkelheit (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Dunkelheit Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Dunkelheit Ringtone.mp3', 'Sysneura_-_Dunkelheit_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Eins zwei polizei (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Eins zwei polizei (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Eins zwei polizei Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Eins zwei polizei Ringtone.mp3', 'Sysneura_-_Eins_zwei_polizei_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Neo Tokyo (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Neo Tokyo (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Neo Tokyo Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Neo Tokyo Ringtone.mp3', 'Sysneura_-_Neo_Tokyo_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Quiet Sunrise (Neon version) (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Quiet Sunrise (Neon version) (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Quiet Sunrise (Neon version) Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Quiet Sunrise (Neon version) Ringtone.mp3', 'Sysneura_-_Quiet_Sunrise_(Neon_version)_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Stellar Whisper (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Stellar Whisper (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Stellar Whisper Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Stellar Whisper Ringtone.mp3', 'Sysneura_-_Stellar_Whisper_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Waffenträger (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Waffenträger (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Waffenträger Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Waffenträger Ringtone.mp3', 'Sysneura_-_Waffenträger_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Walküre (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Walküre (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Walküre Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Walküre Ringtone.mp3', 'Sysneura_-_Walküre_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Город которого нет (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Город которого нет (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Город которого нет Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Город которого нет Ringtone.mp3', 'Sysneura_-_Город_которого_нет_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Колыбельная моей любви (Neon Version) (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Колыбельная моей любви (Neon Version) (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Колыбельная моей любви (Neon Version) Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Колыбельная моей любви (Neon Version) Ringtone.mp3', 'Sysneura_-_Колыбельная_моей_любви_(Neon_Version)_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Корабль (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Корабль (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Корабль Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Корабль Ringtone.mp3', 'Sysneura_-_Корабль_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Мгновения (И. Кабзон Cover) (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Мгновения (И. Кабзон Cover) (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Мгновения (И. Кабзон Cover) Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Мгновения (И. Кабзон Cover) Ringtone.mp3', 'Sysneura_-_Мгновения_(И._Кабзон_Cover)_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Миры, соединённые мечтой (Neon version) (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Миры, соединённые мечтой (Neon version) (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Миры, соединённые мечтой (Neon version) Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Миры, соединённые мечтой (Neon version) Ringtone.mp3', 'Sysneura_-_Миры,_соединённые_мечтой_(Neon_version)_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Навигатор любви (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Навигатор любви (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Навигатор любви Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Навигатор любви Ringtone.mp3', 'Sysneura_-_Навигатор_любви_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Ночь на скорости (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Ночь на скорости (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Ночь на скорости Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Ночь на скорости Ringtone.mp3', 'Sysneura_-_Ночь_на_скорости_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Пой как сердце скажет! (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Пой как сердце скажет! (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Пой как сердце скажет! Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Пой как сердце скажет! Ringtone.mp3', 'Sysneura_-_Пой_как_сердце_скажет!_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Русский Вертолёт (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Русский Вертолёт (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Русский Вертолёт Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Русский Вертолёт Ringtone.mp3', 'Sysneura_-_Русский_Вертолёт_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Сквозь стены (Neon Remix) (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Сквозь стены (Neon Remix) (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Сквозь стены (Neon Remix) Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Сквозь стены (Neon Remix) Ringtone.mp3', 'Sysneura_-_Сквозь_стены_(Neon_Remix)_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Ты - моя высота (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Ты - моя высота (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Ты - моя высота Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Ты - моя высота Ringtone.mp3', 'Sysneura_-_Ты_-_моя_высота_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+
+        <!-- Track: Sysneura - Ты звал - и я услышала (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Ты звал - и я услышала (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Ты звал - и я услышала Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Ты звал - и я услышала Ringtone.mp3', 'Sysneura_-_Ты_звал_-_и_я_услышала_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+    
+        <!-- Track: Sysneura - Im Schatten deiner Worte (Ringtone Cut) -->
+        <div class="track-card">
+            <div class="track-header">
+                <div class="track-title">Sysneura - Im Schatten deiner Worte (Ringtone Cut)</div>
+            </div>
+            <div class="track-controls">
+                <audio controls controlsList="nodownload">
+                    <source src="audio/Sysneura - Im Schatten deiner Worte Ringtone.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button class="action-btn stop-btn" onclick="stopAudio(this)">&#9209; STOP</button>
+                <a href="#" onclick="forceDownload('audio/Sysneura - Im Schatten deiner Worte Ringtone.mp3', 'Sysneura_-_Im_Schatten_deiner_Worte_Ringtone.mp3'); return false;" class="action-btn download-btn">DOWNLOAD</a>
+            </div>
+        </div>
+</div>
+
+        <footer>
+        <div class="social-links" style="margin-bottom: 20px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+            <a href="https://www.youtube.com/@Sysneura" target="_blank" style="color: var(--neon-cyan); text-decoration: none; font-weight: bold; text-transform: uppercase; text-shadow: 0 0 5px var(--neon-cyan); letter-spacing: 1px;">YouTube</a>
+            <a href="https://www.tiktok.com/@sysneura?_r=1&_t=ZG-95XgfbFXC5o" target="_blank" style="color: var(--neon-pink); text-decoration: none; font-weight: bold; text-transform: uppercase; text-shadow: 0 0 5px var(--neon-pink); letter-spacing: 1px;">TikTok</a>
+            <a href="https://open.spotify.com/artist/0d9X6Y1Uw4f6EHVA176icx" target="_blank" style="color: #1DB954; text-decoration: none; font-weight: bold; text-transform: uppercase; text-shadow: 0 0 5px #1DB954; letter-spacing: 1px;">Spotify</a>
+            <a href="https://music.apple.com/de/artist/sysneura/1791672724" target="_blank" style="color: #fa243c; text-decoration: none; font-weight: bold; text-transform: uppercase; text-shadow: 0 0 5px #fa243c; letter-spacing: 1px;">Apple Music</a>
+        </div>
+        &copy; 2026 SYSNEURA. Made with <span class="heart">❤</span> by Sysneura & Argentum323.
+    </footer>
+
+    <script>
+        // 1. Остановка других треков со сбросом в начало при запуске нового
+        document.addEventListener('play', function(e){
+            var audios = document.getElementsByTagName('audio');
+            for(var i = 0, len = audios.length; i < len;i++){
+                if(audios[i] != e.target){
+                    audios[i].pause();
+                    audios[i].currentTime = 0; // Откат в начало
+                }
+            }
+        }, true);
+
+        // 2. Функция для кнопки STOP
+        function stopAudio(btn) {
+            var audio = btn.parentElement.querySelector('audio');
+            if(audio) {
+                audio.pause();
+                audio.currentTime = 0; // Откат в начало
+            }
+        }
+
+        // 3. Принудительное скачивание (обходим ограничения)
+        function forceDownload(url, filename) {
+            fetch(url)
+                .then(response => response.blob())
+                .then(blob => {
+                    const blobUrl = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = blobUrl;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(blobUrl);
+                    document.body.removeChild(a);
+                })
+                .catch(err => {
+                    console.error('Download failed via fetch, using fallback', err);
+                    // Fallback
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                });
+        }
+    </script>
+</body>
+</html>
